@@ -1,0 +1,193 @@
+* {
+	background-color: F9FAFE;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+html {
+	font-size: 62.5%;
+	scroll-behavior: smooth;
+	width: 100%;
+	font-family: 'Plus Jakarta Sans', sans-serif;
+}
+body {
+	font-size: 1.6rem;
+	position: relative;
+	background-color: #f9fafe;
+}
+
+// <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -- >
+.attribution {
+	font-size: 11px;
+	text-align: center;
+}
+
+.attribution a {
+	color: hsl(228, 45%, 44%);
+}
+
+.wrapper {
+	margin: 0 auto;
+	width: 100%;
+	max-width: 80rem;
+}
+
+.notcard {
+	background-color: #ffffff;
+	padding: 3.5rem 3.5rem 1rem 3.5rem;
+
+	&__head {
+		display: flex;
+		justify-content: space-between;
+		margin-bottom: 3rem;
+		flex-wrap: wrap;
+	}
+
+	&__title {
+		font-size: 2.5rem;
+		font-weight: bold;
+		line-height: 3rem;
+
+		span {
+			background-color: #073283;
+			color: white;
+			padding: 0.3rem 1.3rem;
+			border-radius: 0.6rem;
+			margin-left: 1rem;
+			font-size: 2rem;
+		}
+	}
+	&__mark {
+		color: #4b4541;
+		cursor: pointer;
+		text-align: center;
+	}
+	
+	&__post {
+		display: flex;
+		margin: 0.5rem 0;
+		border-radius: 1rem;
+	}
+	
+	.active {
+		background-color: #f6fafd;
+		.dot {
+			background-color: red;
+			width: 1rem;
+			height: 1rem;
+			display: inline-block;
+			margin-left: 0.3rem;
+			border-radius: 50%;
+			pointer-events:none;
+		}
+	}
+
+	&__img {
+		width: 6rem;
+		height: 6rem;
+		margin: 1.5rem;
+	}
+
+	&__imgComment {
+		width: 6rem;
+		height: 6rem;
+		margin: 1.5rem 0 0 0.5rem;
+	}
+
+	&__textBox {
+		width: 100%;
+		margin: 1.5rem 0;
+		color: #7c7f84;
+	}
+
+
+
+	&__message {
+		border-style: solid;
+		border-width: 0.1rem;
+		padding: 1.1rem;
+		margin-top: 1rem;
+	}
+
+
+
+
+	&__postAgo,
+	&__img {
+		pointer-events:none;
+	}
+
+	&__userName,
+	&__groupName,
+	&__recentPost,
+	&__message,
+	&__imgComment,
+	&__post {
+		cursor: pointer;
+	}
+	&__groupName,
+	&__recentPost {
+		color: #5c606b;
+	}
+	&__userName{
+		color: black;
+	}
+	&__userName,
+	&__groupName,
+	&__recentPost {
+		font-weight: bold;
+	}
+	&__userName:hover,
+	&__groupName:hover,
+	&__recentPost:hover,
+	&__mark:hover {
+		color: #415a9b;
+	}
+
+	&__postAgo {
+		display: inline-block;
+	}
+}
+
+// # Front-end Style Guide
+
+// ## Layout
+
+// The designs were created to the following widths:
+
+// - Mobile: 375px
+// - Desktop: 1440px
+
+// ## Colors
+
+// ### Primary
+
+// - Red: hsl(1, 90%, 64%)
+// - Blue: hsl(219, 85%, 26%)
+
+// ### Neutral
+
+// - White: hsl(0, 0%, 100%)
+// - Very light grayish blue: hsl(210, 60%, 98%)
+// - Light grayish blue 1: hsl(211, 68%, 94%)
+// - Light grayish blue 2: hsl(205, 33%, 90%)
+// - Grayish blue: hsl(219, 14%, 63%)
+// - Dark grayish blue: hsl(219, 12%, 42%)
+// - Very dark blue: hsl(224, 21%, 14%)
+
+// ## Typography
+
+// ### Body Copy
+
+// - Font size (paragraph): 16px
+
+// ### Font
+
+// - Family: [Plus Jakarta Sans](https://fonts.google.com/specimen/Plus+Jakarta+Sans)
+// - Weights: 500, 800
