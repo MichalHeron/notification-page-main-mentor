@@ -38,11 +38,6 @@ const readed = e => {
 		e.target.parentElement.classList.toggle('active')
 	}
 	if (e.target.classList.contains('notcard__post')) e.target.classList.toggle('active')
-
-	// console.log(e.target.parentElement.parentElement.parentElement)
-	// console.log(e.target.parentElement.parentElement)
-
-	// e.target.parentElement.classList.toggle('active')
 }
 
 mark.addEventListener('click', activeRemover)
